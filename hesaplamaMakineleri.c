@@ -1,58 +1,58 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h >
-#define PI 3.14 //dairenin çevresini ve alanını bulmak için pi yi tanımlıyoruz.
+#define PI 3.14 //dairenin Ã§evresini ve alanÄ±nÄ± bulmak iÃ§in pi yi tanÄ±mlÄ±yoruz.
 
 void basithspmak()
 {
-	int secim1,secim2; // Sayı türü ve işlem türü için tanımlanan değişkenler
-	int sayi1,sayi2;   //Sayının reel kısımları   
-	int sanal1,sanal2; //Sayının sanal kısımları
+	int secim1,secim2; // SayÄ± tÃ¼rÃ¼ ve iÅŸlem tÃ¼rÃ¼ iÃ§in tanÄ±mlanan deÄŸiÅŸkenler
+	int sayi1,sayi2;   //SayÄ±nÄ±n reel kÄ±sÄ±mlarÄ±   
+	int sanal1,sanal2; //SayÄ±nÄ±n sanal kÄ±sÄ±mlarÄ±
 	
 	printf(" sayinin turunu seciniz:\n ");
 	printf("1. tamsayi\n 2.karmasik sayi\n");
 	scanf("%d",&secim1);   
 	
-	if(secim1==1)   // eğer kişi tam sayı türünü seçerse
+	if(secim1==1)   // eÄŸer kiÅŸi tam sayÄ± tÃ¼rÃ¼nÃ¼ seÃ§erse
 	{ 
 	printf("hangi hesaplama turunu yapacaginizi giriniz\n");
 	printf("1. toplama \n2.carpma\n");
-	scanf("%d",&secim2); //işlemi seçmek için
-	printf("\n");     //boşluk bırakmak için
+	scanf("%d",&secim2); //iÅŸlemi seÃ§mek iÃ§in
+	printf("\n");     //boÅŸluk bÄ±rakmak iÃ§in
     
-	if(secim2==1)  //Eğer kişi Toplama işlemini seçerse
+	if(secim2==1)  //EÄŸer kiÅŸi Toplama iÅŸlemini seÃ§erse
 	{
 		printf("1. ve 2. sayilari giriniz\n");
-		scanf("%d%d",&sayi1 ,&sayi2); //kullanıcıdan iki tane sayı aldık
+		scanf("%d%d",&sayi1 ,&sayi2); //kullanÄ±cÄ±dan iki tane sayÄ± aldÄ±k
 		printf(" sayilarin toplami = %d",sayi1+sayi2); 
 	}
 
-    else if(secim2==2)  //Eğer kişi çarpma işlemini seçerse
+    else if(secim2==2)  //EÄŸer kiÅŸi Ã§arpma iÅŸlemini seÃ§erse
 	 {
 		printf("1. ve 2. sayilari giriniz");
-		scanf("%d%d",&sayi1,&sayi2);  //kullanıcıdan iki tane sayı aldık
+		scanf("%d%d",&sayi1,&sayi2);  //kullanÄ±cÄ±dan iki tane sayÄ± aldÄ±k
 		printf(" sayilarin carpimi = %d",sayi1*sayi2);	
 	 }
 	 
 	else
 	{
-		printf("HATA!!"); // yanlış sayı girince ekrana verilen mesaj
+		printf("HATA!!"); // yanlÄ±ÅŸ sayÄ± girince ekrana verilen mesaj
 	}		
 	
 }
 	
 	else if(secim1==2)
 	{
-		printf("yapilacak olan islemi giriniz\n 1.toplama\n 2.carpma\n"); //işlem türünü seçiniz
+		printf("yapilacak olan islemi giriniz\n 1.toplama\n 2.carpma\n"); //iÅŸlem tÃ¼rÃ¼nÃ¼ seÃ§iniz
 		scanf("%d",&secim2);
 		
 		if(secim2==1)
 		{
 			printf("ilk sayinin once reel sonra sanal kismini giriniz\n");
-			scanf("%d%d",&sayi1,&sanal1); //kullanıcıdan reel ve sanal kısımları aldık
+			scanf("%d%d",&sayi1,&sanal1); //kullanÄ±cÄ±dan reel ve sanal kÄ±sÄ±mlarÄ± aldÄ±k
 			printf("ikinci sayinin once reel sonra sanal kismini giriniz\n");
-			scanf("%d%d",&sayi2,&sanal2);  //kullanıcıdan 2. sayının reel ve sanal kısımları aldık
-			printf("iki sayini toplamı = %d + (%d)i",sayi1+sayi2,sanal1+sanal2);
+			scanf("%d%d",&sayi2,&sanal2);  //kullanÄ±cÄ±dan 2. sayÄ±nÄ±n reel ve sanal kÄ±sÄ±mlarÄ± aldÄ±k
+			printf("iki sayini toplamÄ± = %d + (%d)i",sayi1+sayi2,sanal1+sanal2);
 		}
 		else if(secim2==2)
 		{
@@ -64,7 +64,7 @@ void basithspmak()
 		}
 		else
 		{
-			printf("HATA!!!"); // yanlış sayı girince ekrana verilen mesaj
+			printf("HATA!!!"); // yanlÄ±ÅŸ sayÄ± girince ekrana verilen mesaj
 		}
 	}
 	
@@ -78,8 +78,8 @@ void basithspmak()
   int cevre,alan,secenek;
   
   printf(" bir sekil seciniz \n1.dikdortgen \n2.daire\n3.ucgen\n ");
-  scanf("%d",&secenek); //kullanıcıdan seçenek girmesini istedik
-   if(secenek==1)      // Eğer kullanıcı seçenek 1 i yani dikdörtgeni seçerse
+  scanf("%d",&secenek); //kullanÄ±cÄ±dan seÃ§enek girmesini istedik
+   if(secenek==1)      // EÄŸer kullanÄ±cÄ± seÃ§enek 1 i yani dikdÃ¶rtgeni seÃ§erse
    {
    	int kisaKenar,uzunKenar;
    	printf("dikdortgenin once kisa degerini daha sonra uzun degerini giriniz\n");
@@ -89,41 +89,41 @@ void basithspmak()
    	printf("\ndikdortgenin alani : %d",kisaKenar*uzunKenar);
    	 }
    	 
-   	 else if(secenek==2)    //Eğer kullanıcı seçenek 2yi yani daireyi seçerse
+   	 else if(secenek==2)    //EÄŸer kullanÄ±cÄ± seÃ§enek 2yi yani daireyi seÃ§erse
    	 {
    	 	int yariCap,alan,cevre;
    	 	printf("dairenin yaricapini giriniz\n");
    	 	scanf("%d",&yariCap);
    	 	
    	 	printf("dairenin cevresi:%f\n",2*PI*yariCap);
-   	 	printf("dairenin alani:%f",PI*yariCap*yariCap); //alan ve cevre hesaplama formülleri
+   	 	printf("dairenin alani:%f",PI*yariCap*yariCap); //alan ve cevre hesaplama formÃ¼lleri
 		}
 	
-	else if(secenek==3) //Eğer kullanıcı seçenek 3ü yani üçgeni seçerse
+	else if(secenek==3) //EÄŸer kullanÄ±cÄ± seÃ§enek 3Ã¼ yani Ã¼Ã§geni seÃ§erse
 	{
 
 		int s,kenarA,kenarB,kenarC,alan;
 		
 		printf("ucgenin kenarlarini giriniz:\n");
-		scanf("%d%d%d",&kenarA,&kenarB,&kenarC);         //kullanıcıdan 3 adet kenar değeri girmesini istedik
-		s = (kenarA+kenarB+kenarC)/2;                    //heron formülünü kullanmak için değişken tanımlıyoruz
-		alan = sqrt(s*(s-kenarA)*(s-kenarB)*(s-kenarC));  //üçgenin alanını hesaplamak için heron fomülünü tanımlıyorz
+		scanf("%d%d%d",&kenarA,&kenarB,&kenarC);         //kullanÄ±cÄ±dan 3 adet kenar deÄŸeri girmesini istedik
+		s = (kenarA+kenarB+kenarC)/2;                    //heron formÃ¼lÃ¼nÃ¼ kullanmak iÃ§in deÄŸiÅŸken tanÄ±mlÄ±yoruz
+		alan = sqrt(s*(s-kenarA)*(s-kenarB)*(s-kenarC));  //Ã¼Ã§genin alanÄ±nÄ± hesaplamak iÃ§in heron fomÃ¼lÃ¼nÃ¼ tanÄ±mlÄ±yorz
 	
 		
-		printf("ucgenin cevresi:%d",kenarA+kenarB+kenarC);      //kenarların tooplamı cevreyi verir
+		printf("ucgenin cevresi:%d",kenarA+kenarB+kenarC);      //kenarlarÄ±n tooplamÄ± cevreyi verir
 		printf("\nucgenin alani: %d",alan);
 	
 		}
     else
     {
-    	printf("HATA!!!"); //kullanıcı yanlıs değer girerse uyarı olarak 
+    	printf("HATA!!!"); //kullanÄ±cÄ± yanlÄ±s deÄŸer girerse uyarÄ± olarak 
 	}
 
 }
 
 	void sicaklikhesaplayici()
 {
-		int secim; //kullanıcıdan değer almal için 
+		int secim; //kullanÄ±cÄ±dan deÄŸer almal iÃ§in 
 		float derece;
 		printf("yapmak istediginiz islemin numarasini giriniz:\n");
 		printf("1. Fahrenheit'ten Kelvin'e \n2.Kelvin'den Fahrenheit'e\n");
@@ -163,13 +163,13 @@ void basithspmak()
 
 int main(int argc, char *argv[]) {
 	
-	printf("COKLU HESAP MAKINESI "); //başlık
+	printf("COKLU HESAP MAKINESI "); //baÅŸlÄ±k
 	printf("\n\n\n");
-	int tur; //tür değişkenini tanımladık
+	int tur; //tÃ¼r deÄŸiÅŸkenini tanÄ±mladÄ±k
 	printf("Hesap makinesi turunu giriniz!\n1.BASIT HESAP MAKINESI \n2.ALAN CEVRE HESAPLAYICI\n3.SICAKLIK HESAPLAYICI \n ");
 	scanf("%d",&tur);
 	
-	switch(tur)     //girilen sayıya göre fonksiyon çağırılır.
+	switch(tur)     //girilen sayÄ±ya gÃ¶re fonksiyon Ã§aÄŸÄ±rÄ±lÄ±r.
 	{
 		case 1:
 		basithspmak();
@@ -184,7 +184,7 @@ int main(int argc, char *argv[]) {
 		break;
 		
 		default:
-		printf("HATA!!"); // kullanıcı burda olmayan bir sayı girdiğinde hata vermesi için
+		printf("HATA!!"); // kullanÄ±cÄ± burda olmayan bir sayÄ± girdiÄŸinde hata vermesi iÃ§in
 		break;
 	}
 	
